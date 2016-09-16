@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>
+			Formulario
+		</title>
+	</head>
+
+	<body>
+
+			<form>
+				<fieldset>
+
+					<legend>Formulario ingreso CoderHouse</legend>
+
+					<p>
+						<label for="texto-nombre">Nombre</label>
+						<input id="texto-nombre" type="text" name="nombre" placeholder="Ingrese nombre"/>
+					</p>
+
+					<p>
+						<label for="texto-apellido">Apellidos</label>
+						<input id="texto-apellido" type="text" name="nombre" placeholder="Ingrese ambos apellidos"/>
+					</p>
+
+					<p>
+						<label for="masc">Masculino</label>
+						<input id="masc" type="radio" name="genero" value="M"/>
+
+						<label for="fem">Femenino</label>
+						<input id="fem" type="radio" name="genero" value="F"/>
+					</p>
+
+					<p>
+						<label for="rut">RUT</label>
+						<input id="rut" type="text"/>
+					</p>
+
+					<p>
+						<label>Email</label>
+						<input type="email" name="pass"/>
+
+					</p>
+				
+				</fieldset>					
+				
+				<fieldset>
+					<legeng>Datos del Curso</legend>					
+					<p>
+
+						<label>HTML</label>
+						<input type="checkbox" name="gustos"/>
+						<label>CSS</label>
+						<input type="checkbox" name="gustos"/>
+					</p>
+					<p>
+
+						<label>Password</label>
+						<input type="password" name="pass"/>
+					</p>
+					<p>
+
+						<label>File</label>
+						<input type="file" name="pass"/>
+
+					</p>
+					<p>
+
+						<label>Tel</label>
+						<input type="tel" name="pass"/>
+					</p>
+					<p>
+
+						<label>Number</label>
+						<input type="number" name="pass"/>
+
+					</p>
+					<p>
+					
+						<input type="submit" name="Enviar"/>
+						<input type="reset"/>
+
+					</p>
+					<p>
+						<label for="area">TextArea</label>
+						<textarea id="area">
+
+						</textarea>
+					</p>
+
+					<p>
+						<label for="pais">Select</label>
+						<select id="pais">
+							<OPTGROUP label="America del Sur">
+								<option value="CL">Chile</option>
+								<option value="AR">Argentina</option>
+								<option value="BO">Bolivia</option>
+								<option value="PE">Peru</option>
+							</OPTGROUP>
+							<OPTGROUP label="America del Norte">
+								<option value="CA">Canada</option>
+								<option value="US">USA</option>
+								<option value="MX">Mexico</option>
+							</OPTGROUP>
+						</select>
+
+						
+					</p>
+					
+
+				</fieldset>
+
+				<label>Link Relativo</label>
+				<a href="index.html" target="_blank">A mi Index</a>
+			</form>
+
+
+	</body>
+
+</html>
+
