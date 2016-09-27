@@ -1,0 +1,36 @@
+*{
+
+	margin: 0;
+	padding:0;
+}
+
+#container {
+	background-color: #ccc;
+
+}
+
+#sidebar{
+
+}
+
+
+#menu {
+	display: inline;
+	margin: 0 auto;
+	max-width: 400px;
+	text-align: center;
+
+
+	
+}
+
+
+#menu ul li {
+
+	display:inline;
+}
+
+#contenido{
+	width: 70%;
+	background-color: pink;
+}
