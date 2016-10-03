@@ -1,0 +1,60 @@
+#contenedor{
+	height: 400px;
+	background-color: #fff;
+	margin: 20px;
+	border: 5px solid orange;
+	padding: 10px;
+
+	display: flex;
+	flex-direction:row;
+	flex-wrap:no-wrap;
+
+
+
+	/*
+		display: flex | inline-flex;
+		flex-direction: row | column | row-reverse | column-reverse;
+		flex-wrap: no-wrap | wrap | wrap-reverse;
+		flex-flow:row wrap;
+		justify-content: flex-end | flex-start | center | space-around | space-between;
+		align-items: flex-start | flex-end | center | stretch | baseline;
+		align-content: flex-start | flex-end | center | stretch | space-between | space-around;
+	*/
+
+}
+
+.item{
+	color: #fff;
+	background-color: steelblue;
+	width:300px;
+	height: 70px;
+	text-align: center;
+	margin: 10px;
+	padding: 10px;
+	//height: 50px;
+	
+	//float: left;
+	flex-basis:25%;
+	flex-grow:1;
+	flex-shrink:1;
+
+
+
+	/*		
+		flex-basis:1; unidad de medida dependiendo de su flex direction
+		flex-grow:1;
+		flex-shrink:1;
+		flex:1 1 50%; shortcut de grow y shrink
+		order:; orden de los elementos
+		align-self: flex-start | flex-end | center | stretch | baseline ; // el elemento puede sobrescribir que posicion
+	*/
+
+
+}
+
+#item3 {
+	flex-grow:2;
+	flex-shrink:2;
+	order:;
+
+}
