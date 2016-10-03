@@ -1,0 +1,162 @@
+* {
+	margin: 0;
+	padding: 0;
+	
+}
+ 
+
+ body {
+	background:#e9e9e9;
+}
+
+.contenedor {
+	background:#ccc;
+	width:90%;
+	max-width:2000px;
+	margin:auto; /*Para centrar el documento*/
+
+	/*Flexbox para todo el documento*/
+	display:flex;
+	flex-flow:row wrap; 
+	
+ }
+
+header {
+	background:#2c3e50;
+	width:100%;
+	padding:10px;
+
+ 
+	/* Flex padre de los elementos dentro del header
+		en este caso tenemos .logo , nav */
+	display: flex;
+	justify-content:space-between;
+	align-items:center;
+	flex-direction:row;
+	flex-wrap:wrap;
+}
+
+
+header .logo {
+
+	color:#fff;
+	font-size: 30px;
+}
+
+header .logo img {
+	width: 100px; /*<<<<<< aqui es donde defino el width 
+					de solo la imagen, que afecta al header en general*/
+	vertical-align: top;
+}
+
+header .logo a {
+	color: #fff;
+	text-decoration: none;
+	line-height: 75px;
+
+}
+
+header nav {
+	width: 50%;
+	
+	/* Flex padre de los elementos adentro del nav */
+	display:flex;
+	flex-wrap:wrap;
+	align-items:center;
+}
+
+header nav a {
+	background-color: #c0392b;
+	color:#fff;
+	text-align: center;
+	text-decoration: none;
+	padding:10px;
+
+	/*Flex hijo del contenedor*/
+	flex-grow:1; 	/* con esta propiedad hago que se ocupe todo el 
+					espacio del nav y que se centren los elementos, al
+					ser un hijo del nav que es "flex" , puedo utilizar 
+					esta propiedad*/
+	
+
+}
+
+.main {
+
+	background-color:#fff;
+	padding:20px;
+	flex: 1 1 60%; /* grow, shring, basis */
+}
+
+article {
+	font-family: arial;
+
+}
+
+aside {
+	background:#e67e22;
+	padding:20px;
+	/*Flex hijo del contenedor*/
+	flex: 1 1 30%;
+	
+	/*Flex de todo el aside */
+	display: flex;
+	flex-wrap:wrap;
+	flex-direction:column;
+	justify-content:flex-start;
+	
+
+
+}
+
+aside .widget {
+	background: #d35400;
+	height: 150px;
+	margin: 10px;
+}
+
+footer{
+
+
+	background: #2c3e50;
+	width: 100%;
+	padding: 20px;
+
+	/*Flex*/
+	display:flex;
+
+	flex-wrap:wrap;
+	justify-content:space-between;
+}
+
+footer .links {
+	background: #c0392b;
+	/*Flex*/
+	display:flex;
+	flex-wrap:wrap;
+}
+
+footer .links a{
+	flex-grow:1;
+	color:#fff;
+	padding:10px;
+	text-align: center;
+	
+}
+
+footer .links a:hover{
+		background: #e74c3c;
+}
+
+footer .social {
+	background: #e67e22;
+}
+
+footer .social a {
+	color:#fff;
+	text-decoration: none;
+	padding:10px;
+	display:inline-block; /*Al no ser la clase social flex
+							no podemos alinear esta caja, por eso ocupamos
+							display:inline-block*/
+}
