@@ -44,7 +44,7 @@
 		flex-basis:1; unidad de medida dependiendo de su flex direction
 		flex-grow:1;
 		flex-shrink:1;
-		flex:1 1 50%; shortcut de grow y shrink
+		flex:1 1 50%; shortcut de grow y shrink y basis
 		order:; orden de los elementos
 		align-self: flex-start | flex-end | center | stretch | baseline ; // el elemento puede sobrescribir que posicion
 	*/
