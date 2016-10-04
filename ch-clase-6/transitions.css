@@ -1,0 +1,78 @@
+/* 
+	transition-property: width,color;
+    transition-duration: 2s;
+    transition-timing-function: linear | ease | ease-in | ease-out | ease-in-out | cubic-bezier(n,n,n,n);
+    transition-delay: 1s;
+    transition: property duration timing-function delay|initial|inherit;
+ */
+
+/*
+	3D transform
+	rotateX()
+	rotateY()
+	rotateZ()
+*/
+
+.caja{
+	width: 200px;
+	height: 200px;
+	margin: 20px;
+	border: 1px solid #000;
+	float: left;
+	background-color: steelblue;
+	font-family: arial;
+	font-size: 40px;
+	text-align: center;
+	padding-top: 100px;
+	color:#fff;
+}
+
+#caja1{
+
+    width: 400px;
+	transition-property: width color;
+    transition-duration: 1s;
+    transition-timing-function: lineal;
+    transition-delay: 0s;
+
+}
+
+#caja1:hover{
+	background-color:red;
+	width: 500px;
+}
+
+#caja2{
+	width:400px;
+
+}
+
+#caja2:hover{
+
+	width:300px;
+	background-color:green;
+	transition-property: width color;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+
+	
+}
+
+#caja3:hover{
+    width: 300px;
+    border: 10px solid black;
+    font-size: 20px;
+    color: red;
+    
+}
+
+
+#caja3{
+
+   transition-property: width font-size color border;
+   transition-duration: 2s;
+   transition-timing-function: ease-in;
+   transition-delay: 0.5s;
+
+}
