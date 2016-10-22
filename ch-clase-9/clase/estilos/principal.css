@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+h2 {
+  text-align: center;
+  color: red;
+  padding: 40px; }
+
+header {
+  background: red;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  header a {
+    padding: 20px;
+    background: #660000;
+    color: red; }
+
+article {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  article .col-4 {
+    flex-basis: 23%;
+    padding: 1%;
+    /* 		background: rgb($valor,$valor+50,$valor+100); */
+    background: #ccc; }
+    article .col-4 p {
+      background-color: red;
+      margin: 20px; }
+
+footer {
+  background: cyan;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  footer a {
+    color: red;
+    background: #ff6666;
+    padding: 20px; }
+    footer a:hover {
+      background: #660000; }
+
+/*# sourceMappingURL=principal.css.map */

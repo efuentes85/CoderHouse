@@ -13,11 +13,12 @@
 	background:#ccc;
 	width:90%;
 	max-width:2000px;
-	margin:auto; /*Para centrar el documento*/
+	margin:auto; /*Para centrar el documento y que quede a igual distancia un lado del otro*/
 
 	/*Flexbox para todo el documento*/
 	display:flex;
-	flex-flow:row wrap; 
+	flex-direction: row; 
+	flex-wrap: wrap;
 	
  }
 
@@ -125,31 +126,29 @@ footer{
 	width: 100%;
 	padding: 20px;
 
-	/*Flex*/
+	/*Flex es hijo del flex "contenedor" pero a su vez es padre para .links y para .social */
 	display:flex;
-
 	flex-wrap:wrap;
 	justify-content:space-between;
 }
 
 footer .links {
 	background: #c0392b;
-	/*Flex*/
+	/*Flex para dar un orden a los links dentro de si mismo, ocupamos flex*/
 	display:flex;
 	flex-wrap:wrap;
 }
 
 footer .links a{
+	/*Flex hijo, para ordenar y dar un ancho a los items (links:a) dentro de este*/
 	flex-grow:1;
 	color:#fff;
 	padding:10px;
 	text-align: center;
+	text-decoration:none;
 	
 }
 
-footer .links a:hover{
-		background: #e74c3c;
-}
 
 footer .social {
 	background: #e67e22;

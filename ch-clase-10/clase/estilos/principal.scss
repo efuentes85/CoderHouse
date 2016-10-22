@@ -1,0 +1,74 @@
+@import '_reset.scss';
+
+$colorPrincipal:steelblue;
+$ancho:1000px;
+
+/* MIXIN */
+@mixin mi-mixing-1($radius){
+	border-radius:$radius;
+	border:3px solid pink;
+}
+
+
+@mixin cuadrado($size){
+	width:$size;
+	heigth:$size;
+	border: 1px solid black;
+
+}
+
+@mixin rectangulo($size){
+	width:$size;
+	heigth:$size/2;
+	border: 1px solid white;
+
+}
+
+
+/* EXTENDS */
+
+%textoBlanco {
+	color:white;
+	text-transform:uppercase;
+	padding:20px;
+	text-align:center;
+}
+
+/* ESTILOS */
+
+body{
+	background-color:$colorPrincipal;
+	color: darken($colorPrincipal, 10%);
+	h1{
+		width:ancho/2;
+		background-color:lighten($colorPrincipal,10%);
+		@include mi-mixing-1(10px);
+		@extend %textoBlanco;
+	}
+}
+
+header{
+	$colorPrincipal:red;
+	background-color:$colorPrincipal;
+	.btn{
+		@include cuadrado(50%);
+	}
+}
+
+
+footer{
+	background-color:$colorPrincipal;
+	.btn{
+		@include rectangulo(30px);
+	}
+}
+
+
+
+
+
+article{
+	p{
+		@extend %textoBlanco;
+	}
+}
