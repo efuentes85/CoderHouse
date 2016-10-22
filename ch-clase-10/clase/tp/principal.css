@@ -1,0 +1,93 @@
+button {
+  background: none;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  padding: 0;
+  margin: 0;
+  -webkit-user-select: none;
+  /* for button */
+  -moz-user-select: none;
+  -ms-user-select: none;
+  outline: none; }
+  button::-moz-focus-inner {
+    border: 0;
+    padding: 0; }
+
+button.btn {
+  width: auto;
+  height: auto;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  font-family: Tahoma;
+  display: inline-block;
+  padding: 5px;
+  font-size: 1em;
+  border-radius: 10px;
+  border: 1px solid;
+  padding: 15px; }
+button.btn-default {
+  background-color: #FFFFFF;
+  border-color: #e6e6e6;
+  cursor: pointer;
+  color: black; }
+  button.btn-default:hover {
+    background-color: #cccccc; }
+  button.btn-default:active {
+    border-color: white; }
+button.btn-primary {
+  background-color: #337AB7;
+  border-color: #285f8f;
+  cursor: pointer; }
+  button.btn-primary:hover {
+    background-color: #1d4567; }
+  button.btn-primary:active {
+    border-color: white; }
+button.btn-success {
+  background-color: #5CB85C;
+  border-color: #449d44;
+  cursor: pointer; }
+  button.btn-success:hover {
+    background-color: #357935; }
+  button.btn-success:active {
+    border-color: white; }
+button.btn-info {
+  background-color: #5BC0DE;
+  border-color: #31b0d5;
+  cursor: pointer; }
+  button.btn-info:hover {
+    background-color: #2390b0; }
+  button.btn-info:active {
+    border-color: white; }
+button.btn-warning {
+  background-color: #F0AD4E;
+  border-color: #ec971f;
+  cursor: pointer; }
+  button.btn-warning:hover {
+    background-color: #c77c11; }
+  button.btn-warning:active {
+    border-color: white; }
+button.btn-danger {
+  background-color: #D9534F;
+  border-color: #c9302c;
+  cursor: pointer; }
+  button.btn-danger:hover {
+    background-color: #a02622; }
+  button.btn-danger:active {
+    border-color: white; }
+button.btn-link {
+  color: #337AB7;
+  border: none; }
+  button.btn-link:hover {
+    text-decoration: underline; }
+button.btn-lg {
+  font-size: 1.5em; }
+button.btn-sm {
+  font-size: 0.85em; }
+button.btn-xs {
+  font-size: 0.6em; }
+
+/*# sourceMappingURL=principal.css.map */

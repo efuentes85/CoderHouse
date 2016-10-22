@@ -1,0 +1,87 @@
+@import '_reset.scss';
+
+
+$colorDefault:#FFFFFF;
+$colorPrimario:#337AB7;
+$colorSuccess:#5CB85C;
+$colorInfo:#5BC0DE;
+$colorWarning:#F0AD4E;
+$colorDanger:#D9534F;
+$colorLink:#337AB7;
+$sizeFuente:1em;
+
+@mixin radio($radius){
+	border-radius:$radius;
+	border:1px solid;
+	padding:15px;
+}
+
+@mixin colorear($color){
+	background-color:$color;
+	border-color: darken($color,10%);
+	cursor:pointer;
+	&:hover{
+		background-color:darken($color, 20%);
+	}
+	&:active{
+		border-color:lighten($color, 60%);
+	}
+}
+
+
+button{
+	&.btn{
+		width:auto;
+		height:auto;
+		font-size: 20px;
+		font-weight: bold;
+		color: white;
+		font-family: Tahoma;
+		display: inline-block;	
+		padding:5px;
+		font-size: $sizeFuente;	
+		@include radio(10px);
+		}
+
+	&.btn-default{
+		@include colorear($colorDefault);
+		color:black;
+
+	}
+
+	&.btn-primary{
+		@include colorear($colorPrimario);
+	}
+	
+	&.btn-success{
+		@include colorear($colorSuccess);
+		
+	}
+	&.btn-info{
+		@include colorear($colorInfo);
+	}
+	&.btn-warning{
+			@include colorear($colorWarning);
+	}
+	&.btn-danger{
+			@include colorear($colorDanger);
+	}
+	&.btn-link{
+		color:#337AB7;
+		border: none;
+		&:hover{
+			text-decoration: underline;
+		}
+	}	
+	&.btn-lg{
+		font-size: $sizeFuente*1.5;
+	}
+
+	&.btn-sm{
+		font-size: $sizeFuente*0.85;	
+	}
+	
+	&.btn-xs{
+		font-size: $sizeFuente*0.6;
+	}
+}

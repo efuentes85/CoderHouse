@@ -1,0 +1,81 @@
+@import '_reset.scss';
+@import '_variables.scss';
+
+
+
+
+h2 {
+	
+	text-align: center;
+	color: $colorPrincipal;
+	padding: $distancia *4;
+}
+
+
+$distancia:20px;
+
+header{
+		background: $colorPrincipal;
+		display:flex;
+		flex-direction: row;
+		justify-content: center;
+
+			
+		a{
+		padding: $distancia;
+		background: darken($colorPrincipal,30%);
+		color:$colorPrincipal;
+		}
+
+	.class{
+
+	}
+}
+
+
+
+article{
+
+	width:$ancho;
+	display:flex;
+	flex-direction: row;
+	flex-wrap:wrap;
+	.col-4{
+
+		flex-basis:($ancho / 4) - ($colPadding *2);
+		padding:$colPadding;
+/* 		background: rgb($valor,$valor+50,$valor+100); */
+		background: $colColor;
+
+		p{
+		background-color: $colorPrincipal;
+		margin:$distancia;
+		}
+
+
+	}
+}
+
+
+
+footer {
+
+		background: invert($colorPrincipal);
+		display:flex;
+		flex-direction: row;
+		justify-content: center;
+
+
+		a{
+
+			color:$colorPrincipal;
+			background: lighten($colorPrincipal,20%);
+			padding:$distancia;
+			&:hover{
+				background: darken($colorPrincipal,30%);
+			}
+
+		}
+}
+
+
