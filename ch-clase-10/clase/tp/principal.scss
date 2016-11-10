@@ -8,7 +8,9 @@ $colorInfo:#5BC0DE;
 $colorWarning:#F0AD4E;
 $colorDanger:#D9534F;
 $colorLink:#337AB7;
-$sizeFuente:1em;
+$sizeFuente:18px;
+$letraSitio: Arial;
+
 
 @mixin radio($radius){
 	border-radius:$radius;
@@ -21,13 +23,17 @@ $sizeFuente:1em;
 	border-color: darken($color,10%);
 	cursor:pointer;
 	&:hover{
-		background-color:darken($color, 20%);
+		background-color:lighten($color, 10%);
 	}
 	&:active{
-		border-color:lighten($color, 60%);
+		background-color:darken($color, 30%);
 	}
 }
 
+
+body{
+	font-family: $letraSitio;
+}
 
 button{
 	&.btn{

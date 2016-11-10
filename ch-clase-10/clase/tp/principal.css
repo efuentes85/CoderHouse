@@ -16,6 +16,9 @@ button {
     border: 0;
     padding: 0; }
 
+body {
+  font-family: Arial; }
+
 button.btn {
   width: auto;
   height: auto;
@@ -25,7 +28,7 @@ button.btn {
   font-family: Tahoma;
   display: inline-block;
   padding: 5px;
-  font-size: 1em;
+  font-size: 18px;
   border-radius: 10px;
   border: 1px solid;
   padding: 15px; }
@@ -35,59 +38,59 @@ button.btn-default {
   cursor: pointer;
   color: black; }
   button.btn-default:hover {
-    background-color: #cccccc; }
+    background-color: white; }
   button.btn-default:active {
-    border-color: white; }
+    background-color: #b3b3b3; }
 button.btn-primary {
   background-color: #337AB7;
   border-color: #285f8f;
   cursor: pointer; }
   button.btn-primary:hover {
-    background-color: #1d4567; }
+    background-color: #4f93ce; }
   button.btn-primary:active {
-    border-color: white; }
+    background-color: #122a3f; }
 button.btn-success {
   background-color: #5CB85C;
   border-color: #449d44;
   cursor: pointer; }
   button.btn-success:hover {
-    background-color: #357935; }
+    background-color: #80c780; }
   button.btn-success:active {
-    border-color: white; }
+    background-color: #255625; }
 button.btn-info {
   background-color: #5BC0DE;
   border-color: #31b0d5;
   cursor: pointer; }
   button.btn-info:hover {
-    background-color: #2390b0; }
+    background-color: #85d0e7; }
   button.btn-info:active {
-    border-color: white; }
+    background-color: #1b6d85; }
 button.btn-warning {
   background-color: #F0AD4E;
   border-color: #ec971f;
   cursor: pointer; }
   button.btn-warning:hover {
-    background-color: #c77c11; }
+    background-color: #f4c37d; }
   button.btn-warning:active {
-    border-color: white; }
+    background-color: #985f0d; }
 button.btn-danger {
   background-color: #D9534F;
   border-color: #c9302c;
   cursor: pointer; }
   button.btn-danger:hover {
-    background-color: #a02622; }
+    background-color: #e27c79; }
   button.btn-danger:active {
-    border-color: white; }
+    background-color: #761c19; }
 button.btn-link {
   color: #337AB7;
   border: none; }
   button.btn-link:hover {
     text-decoration: underline; }
 button.btn-lg {
-  font-size: 1.5em; }
+  font-size: 27px; }
 button.btn-sm {
-  font-size: 0.85em; }
+  font-size: 15.3px; }
 button.btn-xs {
-  font-size: 0.6em; }
+  font-size: 10.8px; }
 
 /*# sourceMappingURL=principal.css.map */
